@@ -13,7 +13,7 @@ namespace Barber.Interfaces
 
         Task<bool> DeleteServiceAsync(int id);
 
-        Task<bool> UpdateServiceByIdAsync(int id, User userup);
+        Task<bool> UpdateServiceByIdAsync(int id, Service servup);
 
         Task<IEnumerable<ServiceViewDTO>> GetServices();
     }

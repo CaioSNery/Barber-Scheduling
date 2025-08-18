@@ -48,9 +48,16 @@ namespace Barber.Services
 
         }
 
-        public Task<bool> UpdateServiceByIdAsync(int id, User userup)
+        public async Task<bool> UpdateServiceByIdAsync(int id, Service servup)
         {
-            throw new NotImplementedException();
+            var service = await _context.Services.FindAsync(id);
+            if (service == null) return false;
+
+            service.PriceService = servup.PriceService;
+            service.TypeService = servup.TypeService;
+
+            await _context.SaveChangesAsync();
+            return true;
         }
     }
 }

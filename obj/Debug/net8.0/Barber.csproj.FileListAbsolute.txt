@@ -130,6 +130,7 @@ C:\Projetos\BarbeariaAPI\Barber\obj\Debug\net8.0\Barber.AssemblyInfo.cs
 C:\Projetos\BarbeariaAPI\Barber\obj\Debug\net8.0\Barber.csproj.CoreCompileInputs.cache
 C:\Projetos\BarbeariaAPI\Barber\obj\Debug\net8.0\Barber.MvcApplicationPartsAssemblyInfo.cs
 C:\Projetos\BarbeariaAPI\Barber\obj\Debug\net8.0\Barber.MvcApplicationPartsAssemblyInfo.cache
+C:\Projetos\BarbeariaAPI\Barber\obj\Debug\net8.0\Barber.sourcelink.json
 C:\Projetos\BarbeariaAPI\Barber\obj\Debug\net8.0\staticwebassets.build.json
 C:\Projetos\BarbeariaAPI\Barber\obj\Debug\net8.0\staticwebassets.development.json
 C:\Projetos\BarbeariaAPI\Barber\obj\Debug\net8.0\staticwebassets\msbuild.Barber.Microsoft.AspNetCore.StaticWebAssets.props

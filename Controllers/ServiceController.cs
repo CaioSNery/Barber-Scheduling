@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Barber.Dtos;
 using Barber.Interfaces;
 using Barber.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -24,7 +25,12 @@ namespace Barber.Controllers
         {
             var result = await _service.CreateTypeServiceAsync(service);
             if (result == null) return BadRequest("Invalid Service");
-            return Ok(result);
+            return Ok(new ApiResponse<Service>
+            {
+                Success = true,
+                Message = "Serviço adicionado com sucesso!",
+                Data = service
+            });
         }
 
         [HttpDelete("services/{id:int}")]
@@ -40,6 +46,15 @@ namespace Barber.Controllers
         {
             var result = await _service.GetServices();
             return Ok(result);
+        }
+
+        [HttpPut("services{id:int}")]
+        public async Task<IActionResult> UpdateService(int id, [FromBody] Service servup)
+        {
+            var result = await _service.UpdateServiceByIdAsync(id, servup);
+            if (!result) return BadRequest("Invalid Data");
+
+            return Ok("Serviço atualizado com sucesso!");
         }
 
 

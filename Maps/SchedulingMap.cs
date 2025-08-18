@@ -19,10 +19,10 @@ namespace Barber.Maps
             .HasForeignKey(s => s.ServiceId)
             .OnDelete(DeleteBehavior.Cascade);
 
-            // builder.HasOne(u => u.User)
-            // .WithMany()
-            // .HasForeignKey(u => u.User)
-            // .OnDelete(DeleteBehavior.Restrict);
+            builder.HasOne(u => u.User)
+            .WithMany()
+            .HasForeignKey(u => u.UserId)
+            .OnDelete(DeleteBehavior.Restrict);
 
 
         }

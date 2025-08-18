@@ -13,6 +13,7 @@ builder.Services.AddDbContext<AppDbContext>(options
 
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IServicesService, ServicesService>();
+builder.Services.AddScoped<ISchedulingService, SchedulingService>();
 builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
