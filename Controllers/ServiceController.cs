@@ -39,7 +39,12 @@ namespace Barber.Controllers
             var user = await _service.DeleteServiceAsync(id);
             if (!user) return NotFound();
 
-            return Ok("Serviço deletado !");
+            return Ok(new ApiResponse<Service>
+            {
+                Success = true,
+                Message = "Serviço deletado com sucesso!",
+                Data = null
+            });
         }
         [HttpGet("services")]
         public async Task<IActionResult> GetServices()
@@ -54,7 +59,12 @@ namespace Barber.Controllers
             var result = await _service.UpdateServiceByIdAsync(id, servup);
             if (!result) return BadRequest("Invalid Data");
 
-            return Ok("Serviço atualizado com sucesso!");
+            return Ok(new ApiResponse<Service>
+            {
+                Success = true,
+                Message = "Serviço atualizado com sucesso",
+                Data = servup
+            });
         }
 
 

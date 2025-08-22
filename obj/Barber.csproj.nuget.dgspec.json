@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\BarbeariaAPI\\Barber\\Barber.csproj": {}
+    "C:\\Projetos\\BarbeariaAPI\\barber\\Barber.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\BarbeariaAPI\\Barber\\Barber.csproj": {
+    "C:\\Projetos\\BarbeariaAPI\\barber\\Barber.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\BarbeariaAPI\\Barber\\Barber.csproj",
+        "projectUniqueName": "C:\\Projetos\\BarbeariaAPI\\barber\\Barber.csproj",
         "projectName": "Barber",
-        "projectPath": "C:\\Projetos\\BarbeariaAPI\\Barber\\Barber.csproj",
+        "projectPath": "C:\\Projetos\\BarbeariaAPI\\barber\\Barber.csproj",
         "packagesPath": "C:\\Users\\Caio Nery\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\BarbeariaAPI\\Barber\\obj\\",
+        "outputPath": "C:\\Projetos\\BarbeariaAPI\\barber\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Caio Nery\\AppData\\Roaming\\NuGet\\NuGet.Config"

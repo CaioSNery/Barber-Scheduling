@@ -16,12 +16,12 @@ namespace Barber.Mappings
             CreateMap<User, UserViewDTO>().ReverseMap();
 
             //SERVICES
-            CreateMap<Service, ServiceViewDTO>().ReverseMap();
+            CreateMap<Service, ServiceDTO>().ReverseMap();
 
             //Schedulings
 
-            CreateMap<Scheduling, SchedulingViewDTO>().ReverseMap();
-            CreateMap<Scheduling, SchedulingDTO>().ReverseMap();
+            CreateMap<SchedulingDTO, Scheduling>().ReverseMap();
+            CreateMap<Scheduling, SchedulingResponseDTO>().ReverseMap();
 
         }
     }

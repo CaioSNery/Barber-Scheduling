@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Barber.Models
+namespace Barber.Dtos
 {
-    public class Scheduling
+    public class SchedulingResponseDTO
     {
         public int Id { get; set; }
         public int UserId { get; set; }
-        public User User { get; set; }
+        public UserDTO User { get; set; }
         public int ServiceId { get; set; }
-        public Service Service { get; set; }
+        public ServiceDTO Service { get; set; }
         public DateTime DateScheduling { get; set; }
     }
 }

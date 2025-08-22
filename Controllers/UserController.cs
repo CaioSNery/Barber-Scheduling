@@ -62,7 +62,7 @@ namespace Barber.Controllers
         public async Task<IActionResult> GetUsers()
         {
             var result = await _service.GetAllUsersAsync();
-            return Ok("Usuario atualizado com sucesso!");
+            return Ok(result);
         }
     }
 

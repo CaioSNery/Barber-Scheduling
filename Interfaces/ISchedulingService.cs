@@ -4,19 +4,22 @@ using System.Linq;
 using System.Threading.Tasks;
 using Barber.Dtos;
 using Barber.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Barber.Interfaces
 {
     public interface ISchedulingService
     {
-        Task<SchedulingDTO> CreateNewScheduleingAsync(Scheduling scheduling);
+        Task<SchedulingResponseDTO> CreateNewScheduleingAsync(SchedulingDTO dto);
 
         Task<bool> DeleteSchedulingByIdAsync(int id);
 
         Task<bool> UpdateSchedulingByIdAsync(int id, Scheduling upscheduling);
 
-        Task<IEnumerable<SchedulingViewDTO>> GetAllSchedulingsAsync();
+        Task<IEnumerable<SchedulingResponseDTO>> GetAllSchedulingsAsync();
 
-        Task<Scheduling> GetSchedulingByIdAsync(int id);
+        Task<SchedulingResponseDTO> GetSchedulingByIdAsync(int id);
+
+        Task<List<Scheduling>> GetSchedulingByDay(DateTime date);
     }
 }

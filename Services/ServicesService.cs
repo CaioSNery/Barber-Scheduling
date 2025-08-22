@@ -39,12 +39,12 @@ namespace Barber.Services
             return true;
         }
 
-        public async Task<IEnumerable<ServiceViewDTO>> GetServices()
+        public async Task<IEnumerable<ServiceDTO>> GetServices()
         {
             var services = await _context.Services.ToListAsync();
             if (services == null) return null;
 
-            return _mapper.Map<IEnumerable<ServiceViewDTO>>(services);
+            return _mapper.Map<IEnumerable<ServiceDTO>>(services);
 
         }
 

@@ -15,6 +15,6 @@ namespace Barber.Interfaces
 
         Task<bool> UpdateServiceByIdAsync(int id, Service servup);
 
-        Task<IEnumerable<ServiceViewDTO>> GetServices();
+        Task<IEnumerable<ServiceDTO>> GetServices();
     }
 }
